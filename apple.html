@@ -4,7 +4,13 @@
 		<title>Apple</title>
 
 		<style>
+			body {
+				font-family: Helvetica, sans-serif;
+				background-color: #dcfcfb;
+			}
+
 			#companyName {
+				background-color: #ededed;
 				font-family: Helvetica, sans-serif;
 				font-size: 50px;
 				margin: auto;
@@ -15,6 +21,7 @@
 			}
 
 			#questionDiv {
+				background-color: #ededed;
 				margin: 10px;
 				border-radius: 25px;
 				border: 1px solid #bababa;
@@ -32,6 +39,7 @@
 			}
 
 			#imageBox {
+				background-color: #ededed;
 				align: center;
 				border-radius: 25px;
 				border: 1px solid #bababa;
@@ -50,6 +58,10 @@
 				padding: 5px;
 			}
 
+			button {
+				background-color: #ededed;
+			}
+
 			.choiceButtons {
 				font-family: Helvetica, sans-serif;
 				height: 50px;
@@ -59,11 +71,12 @@
 			}
 
 			#outDiv {
+				background-color: #ededed;
 				position: absolute;
 				margin: 10px;
 				border-radius: 25px;
 				border: 1px solid #bababa;
-				top: 50%; right: 50%;
+				top: 50% ;right: 50%;
 				transform: translate(50%, -50%);
 				width: 750px;
 				height: 450px;
@@ -73,7 +86,12 @@
 				margin: 10px;
 			}
 
+			#pointsDisplay {
+				margin: 10px;
+			}
+
 			#endDiv {
+				background-color: #ededed;
 				position: absolute;
 				margin: 10px;
 				border-radius: 25px;
@@ -88,15 +106,24 @@
 				margin: 10px;
 			}
 
+			#endPoints {
+				margin: 10px;
+			}
+
 		</style>
 	</head>
 	<body>
-		<div id="outDiv" onClick="textPressed(0)" hidden>
-			<h1 id="outText">This is the outcome of the first question! This is where you will explain what happened because of the choice made in the first question. (Tap to continue)</h1>
+		<div id="outerOutDiv">
+			<div id="outDiv" onClick="textPressed(0)" hidden>
+				<h1 id="outText">This is the outcome of the first question! This is where you will explain what happened because of the choice made in the first question. (Tap to continue)</h1>
+				<br>
+				<h1 id="pointsDisplay"></h1>
+			</div>
 		</div>
-
 		<div id="endDiv" hidden>
 			<h1 id="endText">Ending Summary</h1>
+			<br>
+			<h1 id="endPoints"></h1>
 		</div>
 
 		<div id="allQ">	
@@ -164,6 +191,8 @@
 			let qText = document.getElementById("questionText");
 			let outText = document.getElementById("outText");
 			let endText = document.getElementById("endText");
+			let pointsDisplay = document.getElementById("pointsDisplay");
+			let endPoints = document.getElementById("endPoints");
 
 			let choice1button = document.getElementById("choice1");
 			let choice2button = document.getElementById("choice2");
@@ -187,6 +216,7 @@
 			let choices = [];
 			let qNum = 1;
 			let endingSummary = "";
+			let points = 0;
 
 			function buttonPressed(x) {
 				allQ.hidden = true;
@@ -198,9 +228,14 @@
 					case 1:
 						switch(x) {
 							case 0:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q1[1];
 								break;
 							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q1[2];
 								break;
 						}
@@ -213,9 +248,14 @@
 					case 2:
 						switch(x) {
 							case 0:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q2[1];
 								break;
 							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q2[2];
 								break;
 						}
@@ -228,9 +268,14 @@
 					case 3:
 						switch(x) {
 							case 0:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q3[1];
 								break;
 							case 1:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q3[2];
 								break;
 						}
@@ -243,9 +288,14 @@
 					case 4:
 						switch(x) {
 							case 0:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q4[1];
 								break;
 							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q4[2];
 								break;
 						}
@@ -258,9 +308,14 @@
 					case 5:
 						switch(x) {
 							case 0:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q5[1];
 								break;
 							case 1:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q5[2];
 								break;
 						}
@@ -273,9 +328,14 @@
 					case 6:
 						switch(x) {
 							case 0:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q6[1];
 								break;
 							case 1:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q6[2];
 								break;
 						}
@@ -288,9 +348,14 @@
 					case 7:
 						switch(x) {
 							case 0:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q7[1];
 								break;
 							case 1:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q7[2];
 								break;
 						}
@@ -303,9 +368,14 @@
 					case 8:
 						switch(x) {
 							case 0:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q8[1];
 								break;
 							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q8[2];
 								break;
 						}
@@ -318,9 +388,14 @@
 					case 9:
 						switch(x) {
 							case 0:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q9[1];
 								break;
 							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q9[2];
 								break;
 						}
@@ -333,9 +408,14 @@
 					case 10:
 						switch(x) {
 							case 0:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q10[1];
 								break;
 							case 1:
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q10[2];
 								break;
 						}
@@ -350,6 +430,11 @@
 				if (qNum === 11) {
 					endingSummary = q1e[choices[0]] + q2e[choices[1]] + q3e[choices[2]] + q4e[choices[3]] + q5e[choices[4]] + q6e[choices[5]] + q7e[choices[6]] + q8e[choices[7]] + q9e[choices[8]] + q10e[choices[9]];
 					endText.textContent = endingSummary;
+					if (points >= 70) {
+						endPoints.textContent = ("You Win! Points: " + points);
+					} else {
+						endPoints.textContent = ("You lost. Points: " + points);
+					}
 					endDiv.hidden = false;
 					outDiv.hidden = true;
 				} else {
