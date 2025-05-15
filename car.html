@@ -121,7 +121,7 @@
 			</div>
 		</div>
 		<div id="endDiv" hidden>
-			<h1 id="endText">Ending Summary</h1>
+			<p id="endText">Ending Summary</p>
 			<br>
 			<h1 id="endPoints"></h1>
 		</div>
@@ -133,9 +133,9 @@
 			</div>
 			<div id="gridID">
 				<div id="imageBox">
-					<img id="image1" src="obama1.jpg" alt="obama1" width="368" height="207">
-					<img id="image2" src="obama2.jpg" alt="obama2" width="201" height="251" hidden>
-					<img id="image3" src="obama3.jpg" alt="obama3" width="320" height="180" hidden>
+					<img id="image1" src="car1i.jpg" alt="obama1" width="320" height="240">
+					<img id="image2" src="generalwari.jpg" alt="obama2" width="339" height="226" hidden>
+					<img id="image3" src="kmperh.jpg" alt="obama3" width="320" height="240" hidden>
 					<img id="image4" src="obama4.jpg" alt="obama4" width="202" height="249" hidden>
 					<img id="image5" src="obama5.jpg" alt="obama5"  width="367" height="244" hidden>
 					<img id="image6" src="obama6.jpg" alt="obama6" width="320" height="180" hidden>
@@ -153,9 +153,9 @@
 		</div>
 		<script type="text/javascript">
 			//fix
-			let q1 = ["This is question 1!", "Q1 C1 A (Press to Continue)", "Q1 C2 A (Press to Continue)"];
-			let q2 = ["This is question 2!", "Q2 C1 A (Press to Continue)", "Q2 C2 A (Press to Continue)"];
-			let q3 = ["This is question 3!", "Q3 C1 A (Press to Continue)", "Q3 C2 A (Press to Continue)"];
+			let q1 = ["You are preparing to branch out and start selling cars in Europe. However, the E.U. has stricter laws and regulations when it comes to vehicle safety than the United States. The vehicles require a much more thorough inspection and have to be certified safe. Do you:", "You chose to spend the extra money to pay European workers for safety certifications for your cars. While this did cost a decent amount of money, the additional revenue from car sales in Europe more than makes up for the money spent.", "You chose to not pay extra money to have your cars inspected for safety. While this did save some money in the short-term, the additional revenue from selling cars in Europe would have more than made up for the money spent on the inspections."];
+			let q2 = ["You export goods to two countries, however, these countries are now at war. Do you:", "You immediately cut off all supplies from both countries, choosing neutrality over conflicts or taking sides. Your business does take a massive financial hit with profits dipping and some supplies being cut off. But you do gain global respect, and future trades start opening with you.", "You choose to serve only one country and cut off the other. The country that you helped appreciate it but the other country that you cut off counts it as betrayal. They blacklist your products and your brand becomes a political tool."];
+			let q3 = ["You recently started selling cars to the United States. You adjusted the wheel and other components so they were on the other side and easier for Americans to use and understand as well as legal in the United states. You forgot to change one thing, though; the speedometer is still in kilometers. Multiple Americans have been given tickets, and one person even went to jail for not following the speed limit. They are now suing and demanding that you pay for this mistake.", "Your choice leads to some criticism of your company for making such an egregious mistake, however people have been praising your company for how you went about dealing with this issue. The media coverage is mixed but somewhat positive.", "Your choice to blame customers takes you both to court. The court sides with the customers and you are forced to pay a large sum of money for damages caused. There is also a large amount of negative media reception around this case and your sales have started to drop substantially."];
 			let q4 = ["This is question 4!", "Q4 C1 A (Press to Continue)", "Q4 C2 A (Press to Continue)"];
 			let q5 = ["This is question 5!", "Q5 C1 A (Press to Continue)", "Q5 C2 A (Press to Continue)"];
 			let q6 = ["This is question 6!", "Q6 C1 A (Press to Continue)", "Q6 C2 A (Press to Continue)"];
@@ -164,9 +164,9 @@
 			let q9 = ["This is question 9!", "Q9 C1 A (Press to Continue)", "Q9 C2 A (Press to Continue)"];
 			let q10 = ["This is question 10!", "Q10 C1 A (Press to Continue)", "Q10 C2 A (Press to Continue)"];
 
-			let q1cs = ["Q1 C1", "Q1 C2"];
-			let q2cs = ["Q2 C1", "Q2 C2"];
-			let q3cs = ["Q3 C1", "Q3 C2"];
+			let q1cs = ["Spend the extra resources and pay European workers more to certify them.", "Don’t sell to Europe in an attempt to save money."];
+			let q2cs = ["Stop serving both countries.", "Only serve one of the countries."];
+			let q3cs = ["Admit your mistake and pay the fees.", "Blame the customer and fight back."];
 			let q4cs = ["Q4 C1", "Q4 C2"];
 			let q5cs = ["Q5 C1", "Q5 C2"];
 			let q6cs = ["Q6 C1", "Q6 C2"];
@@ -175,9 +175,9 @@
 			let q9cs = ["Q9 C1", "Q9 C2"];
 			let q10cs = ["Q10 C1", "Q10 C2"];
 
-			let q1e = ["Q1 C1 E. ", "Q1 C2 E. "];
-			let q2e = ["Q2 C1 E. ", "Q2 C2 E. "];
-			let q3e = ["Q3 C1 E. ", "Q3 C2 E. "];
+			let q1e = ["Your choice to spend extra money to get your cars safety-certified in Europe allowed for quite a bit of extra revenue to be made. ", "Your choice to not have your cars safety-certified in Europe saved money in the short term, but the extra revenue from selling cars in Europe would have more than made up for the money spent. "];
+			let q2e = ["Your company goes through a short term product loss. But in the end, your principled stand wins you trust in the global market. Soon enough, the war ends, and both countries start trading with you again. ", "You profit quickly by siding with one country, but your business becomes entangled in international politics. Once the war ends, you try to rebuild relationships, but your growth stalls."];
+			let q3e = ["Your choice to acknowledge the speedometer issue led to people being somewhat upset but also acknowledging how much integrity you have as a company to handle the issue this way.", "You eventually lost the court case about the speedometers being in the wrong units, and were forced to pay quite a bit of money. Your reputation took a large hit from this as well."];
 			let q4e = ["Q4 C1 E. ", "Q4 C2 E. "];
 			let q5e = ["Q5 C1 E. ", "Q5 C2 E. "];
 			let q6e = ["Q6 C1 E. ", "Q6 C2 E. "];
@@ -268,14 +268,14 @@
 					case 3:
 						switch(x) {
 							case 0:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
-								outText.textContent = q3[1];
-								break;
-							case 1:
 								//Correct
 								points = points + 10;
 								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								outText.textContent = q3[1];
+								break;
+							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q3[2];
 								break;
 						}
