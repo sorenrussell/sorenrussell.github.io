@@ -121,7 +121,7 @@
 			</div>
 		</div>
 		<div id="endDiv" hidden>
-			<h1 id="endText">Ending Summary</h1>
+			<p id="endText">Ending Summary</p>
 			<br>
 			<h1 id="endPoints"></h1>
 		</div>
@@ -133,15 +133,15 @@
 			</div>
 			<div id="gridID">
 				<div id="imageBox">
-					<img id="image1" src="obama1.jpg" alt="obama1" width="368" height="207">
-					<img id="image2" src="obama2.jpg" alt="obama2" width="201" height="251" hidden>
-					<img id="image3" src="obama3.jpg" alt="obama3" width="320" height="180" hidden>
+					<img id="image1" src="flower.jpg" alt="obama1" width="303" height="227">
+					<img id="image2" src="generalwari.jpg" alt="obama2" width="339" height="226" hidden>
+					<img id="image3" src="copy.jpg" alt="obama3" width="280" height="164" hidden>
 					<img id="image4" src="obama4.jpg" alt="obama4" width="202" height="249" hidden>
-					<img id="image5" src="obama5.jpg" alt="obama5"  width="367" height="244" hidden>
+					<img id="image5" src="india.jpg" alt="obama5"  width="315" height="177" hidden>
 					<img id="image6" src="obama6.jpg" alt="obama6" width="320" height="180" hidden>
-					<img id="image7" src="obama7.jpg" alt="obama7" width="300" height="168" hidden>
+					<img id="image7" src="kindle.png" alt="obama7" width="296" height="192" hidden>
 					<img id="image8" src="obama8.jpg" alt="obama8" width="333" height="187" hidden>
-					<img id="image9" src="obama9.jpg" alt="obama9" width="370" height="208" hidden>
+					<img id="image9" src="banned.jpg" alt="obama9" width="306" height="194" hidden>
 					<img id="image10" src="obama10.jpg" alt="obama10" width="384" height="256" hidden>
 				</div>
 
@@ -153,37 +153,37 @@
 		</div>
 		<script type="text/javascript">
 			//fix
-			let q1 = ["This is question 1!", "Q1 C1 A (Press to Continue)", "Q1 C2 A (Press to Continue)"];
-			let q2 = ["This is question 2!", "Q2 C1 A (Press to Continue)", "Q2 C2 A (Press to Continue)"];
-			let q3 = ["This is question 3!", "Q3 C1 A (Press to Continue)", "Q3 C2 A (Press to Continue)"];
+			let q1 = ["One of your branches recently became embroiled in a controversy because your official store was selling something made with materials of a plant that is endangered and grows in an important area to the indigenous people of that area. People are not allowed to use this plant in commercial materials, however there was a listing on your site with a product made with these materials. You haven’t addressed this controversy yet, but there is pressure to address this. ", "You decided to address the controversy publicly. Unfortunately, this brought a lot more publicity to the situation, and many more people became angry with you and the company. ", "You decided to shut down the branch without addressing the controversy publicly. While some people were angry that you didn’t address it publicly, this was the correct decision, as publicly addressing the controversy would have likely caused more people to learn about it and get angry at your company."];
+			let q2 = ["You export goods to two countries, however, these countries are now at war. Do you:", "You immediately cut off all supplies from both countries, choosing neutrality over conflicts or taking sides. Your business does take a massive financial hit with profits dipping and some supplies being cut off. But you do gain global respect, and future trades start opening with you.", "You choose to serve only one country and cut off the other. The country that you helped appreciate it but the other country that you cut off counts it as betrayal. They blacklist your products and your brand becomes a political tool."];
+			let q3 = ["You have recently been sued for letting so many fake items of a copyrighted character be produced and sold through Amazon. You claim it’s fair use, and you don’t have direct control over it, but you could take the listing down. Do you:", "You chose to attempt to fight the copyright claims in court. Unfortunately, you did not end up winning the court case. Hundreds of thousands of dollars were spent on legal fees, and you were forced to take the listings with the copyrighted characters down anyway.", "You decided to settle with the people that sued you outside of court and mostly comply with their demands. This was the correct decision, as you would likely have not won the court case and would have most likely been forced to take the items down anyway."];
 			let q4 = ["This is question 4!", "Q4 C1 A (Press to Continue)", "Q4 C2 A (Press to Continue)"];
-			let q5 = ["This is question 5!", "Q5 C1 A (Press to Continue)", "Q5 C2 A (Press to Continue)"];
+			let q5 = ["On Amazon’s store, users have been selling rugs with the flag of India, which is illegal. It violates a law in India known as the Flag Code, which makes it illegal to produce memorabilia with the flag. The Minister of External Affairs in India has threatened to take away Amazon employees’ visas. If Amazon doesn't take down the listing and issue an apology, this will be enacted.", "You chose to take down the listings of the rugs with the flag on them and issue a public apology. While this did bring slightly more attention to the issue, it was still the better option than having employee visas taken away.", "You chose to ignore the threat from the Minister of External Affairs in India and leave the listings for the rugs up. This decision led to employee visas being taken away, making it much harder to deliver items to India."];
 			let q6 = ["This is question 6!", "Q6 C1 A (Press to Continue)", "Q6 C2 A (Press to Continue)"];
-			let q7 = ["This is question 7!", "Q7 C1 A (Press to Continue)", "Q7 C2 A (Press to Continue)"];
+			let q7 = ["One of your policies for turning books into eBooks makes it so that some books can only be sold on your platform. This agreement is completely legal in the United States but not legal in the European Union due to concerns that this agreement may lead to monopolies. It violates the Antitrust Law in the EU, which means that companies are not allowed to make monopolies on a certain market, and this agreement has led to Amazon essentially monopolizing the market for a lot of eBooks. An investigation was conducted and found that you were violating these laws and are being taken to court for this. Do you:", "You chose to say that you did nothing wrong and fight the accusation in court. Unfortunately, the court decided that your actions were illegal, and you were fined quite a bit of money and forced to change your policies anyway.", "You chose to change your policies in order to comply with the laws of the European Union. This was definitely the correct choice, as what your company was doing was blatantly illegal in the EU, and you would almost certainly have lost the court case."];
 			let q8 = ["This is question 8!", "Q8 C1 A (Press to Continue)", "Q8 C2 A (Press to Continue)"];
-			let q9 = ["This is question 9!", "Q9 C1 A (Press to Continue)", "Q9 C2 A (Press to Continue)"];
+			let q9 = ["You recently got into a controversy for selling some items that are considered illegal in multiple different states and countries. Some people were unhappy that you were selling these items on your website at all, while others said that you should be able to sell these items to places that allowed them. Do you:", "You chose to stop selling the products and issue a public apology about the situation. This was the correct choice, as continuing to sell the products could have caused Amazon to temporarily be banned in certain states and countries until the items were taken down.", "You chose to continue to sell the products and say that you do not have control of what people sell on your website. Unfortunately, some of the states and countries in which the items were illegal decided to temporarily ban Amazon, which ended up forcing you to remove the items anyway."];
 			let q10 = ["This is question 10!", "Q10 C1 A (Press to Continue)", "Q10 C2 A (Press to Continue)"];
 
-			let q1cs = ["Q1 C1", "Q1 C2"];
-			let q2cs = ["Q2 C1", "Q2 C2"];
-			let q3cs = ["Q3 C1", "Q3 C2"];
+			let q1cs = ["Address the Controversy and apologize to the people of that area.", "Shut down the branch and don’t address the controversy."];
+			let q2cs = ["Stop serving both countries.", "Only serve one of the countries."];
+			let q3cs = ["Attempt to fight this in court.", "Settle out of court and attempt to remove all of the items with copyrighted characters off of Amazon."];
 			let q4cs = ["Q4 C1", "Q4 C2"];
-			let q5cs = ["Q5 C1", "Q5 C2"];
+			let q5cs = ["Take down the listing and issue an apology.", "Ignore the threat and keep the listings up."];
 			let q6cs = ["Q6 C1", "Q6 C2"];
-			let q7cs = ["Q7 C1", "Q7 C2"];
+			let q7cs = ["Argue that you did nothing wrong and fight the accusation in court.", "Accept their terms and change your policies."];
 			let q8cs = ["Q8 C1", "Q8 C2"];
-			let q9cs = ["Q9 C1", "Q9 C2"];
+			let q9cs = ["Stop selling those things and issue an apology.", "Say that you cannot control what other people sell on your website and continue to sell the products."];
 			let q10cs = ["Q10 C1", "Q10 C2"];
 
-			let q1e = ["Q1 C1 E. ", "Q1 C2 E. "];
-			let q2e = ["Q2 C1 E. ", "Q2 C2 E. "];
-			let q3e = ["Q3 C1 E. ", "Q3 C2 E. "];
+			let q1e = ["Your choice to address the endangered plant controversy publicly brought more attention to the situation, causing even more people to become angry.", "Your choice to not address the endangered plant controversy publicly was the correct choice, as addressing it publicly would have brought more attention to the controversy."];
+			let q2e = ["Your choice to stop selling products to both of the countries involved in the war helped prevent unnecessary conflict with your company.", "Your choice to continue selling to one country in the war led to the other country becoming angry."];
+			let q3e = ["You lost the legal battle about copyrighted characters, and were forced to take down the listings that contained them on Amazon anyway.", "Choosing to settle outside of court instead of fighting the copyright claims in court was the correct decision, as you would have probably lost the case if you attempted to fight it."];
 			let q4e = ["Q4 C1 E. ", "Q4 C2 E. "];
-			let q5e = ["Q5 C1 E. ", "Q5 C2 E. "];
+			let q5e = ["Your choice to take down the listings for rugs with India’s flag on them was the correct decision, as not doing this would have resulted in your employees’ visas being terminated.", "Your decision to not take down the listings for rugs with India’s flag on them caused many of your employees’ visas to India to be taken away, which made it harder to deliver things there."];
 			let q6e = ["Q6 C1 E. ", "Q6 C2 E. "];
-			let q7e = ["Q7 C1 E. ", "Q7 C2 E. "];
+			let q7e = ["Your choice to attempt to fight to keep your eBook policies in court was incorrect, and you lost the court case quite easily and were forced to change your policies anyway.", "Your choice to change your eBook policies was correct, as they were blatantly illegal in the EU, and you would definitely have lost the court case if you attempted to fight it."];
 			let q8e = ["Q8 C1 E. ", "Q8 C2 E. "];
-			let q9e = ["Q9 C1 E. ", "Q9 C2 E. "];
+			let q9e = ["Your choice to stop selling the products that were banned in some places was correct, as continuing to sell them could have led to Amazon being temporarily banned in some places.", "Your choice to continue to sell the products that were illegal in some places caused Amazon to be banned in some of these places temporarily, which forced you to take down the products anyway."];
 			let q10e = ["Q10 C1 E.", "Q10 C2 E."];
 
 			let outDiv = document.getElementById("outDiv");
@@ -228,14 +228,14 @@
 					case 1:
 						switch(x) {
 							case 0:
-								//Correct
-								points = points + 10;
-								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q1[1];
 								break;
 							case 1:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q1[2];
 								break;
 						}
@@ -308,14 +308,14 @@
 					case 5:
 						switch(x) {
 							case 0:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
-								outText.textContent = q5[1];
-								break;
-							case 1:
 								//Correct
 								points = points + 10;
 								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								outText.textContent = q5[1];
+								break;
+							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q5[2];
 								break;
 						}
