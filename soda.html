@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Soda Company</title>
+		<title>Coca-Cola</title>
 
 		<style>
 			body {
@@ -64,7 +64,6 @@
 
 			.choiceButtons {
 				font-family: Helvetica, sans-serif;
-				height: 50px;
 				border-radius: 10px;
 				border: 2px solid #DADADA;
 				font-size: 25px;
@@ -127,22 +126,22 @@
 		</div>
 
 		<div id="allQ">	
-			<h1 id="companyName">Soda Company Name</h1>
+			<h1 id="companyName">Coca-Cola</h1>
 			<div id="questionDiv">
 				<h2 id="questionText"></h2>
 			</div>
 			<div id="gridID">
 				<div id="imageBox">
 					<img id="image1" src="mexicancoke.jpg" alt="obama1" width="350" height="350">
-					<img id="image2" src="generalwari.jpg" alt="obama2" width="339" height="226" hidden>
+					<img id="image2" src="map.jpg" alt="obama4" width="343" height="139" hidden>
 					<img id="image3" src="cata.jpeg" alt="obama3" width="296" height="222" hidden>
-					<img id="image4" src="obama4.jpg" alt="obama4" width="202" height="249" hidden>
+					<img id="image4" src="generalwari.jpg" alt="obama2" width="339" height="226" hidden>
 					<img id="image5" src="cap.jpg" alt="obama5"  width="314" height="165" hidden>
-					<img id="image6" src="obama6.jpg" alt="obama6" width="320" height="180" hidden>
+					<img id="image6" src="meeting.jpg" alt="obama6" width="300" height="300" hidden>
 					<img id="image7" src="diet.png" alt="obama7" width="300" height="131" hidden>
-					<img id="image8" src="obama8.jpg" alt="obama8" width="333" height="187" hidden>
+					<img id="image8" src="smoke.jpg" alt="obama8" width="384" height="216" hidden>
 					<img id="image9" src="corn.jpg" alt="obama9" width="300" height="200" hidden>
-					<img id="image10" src="obama10.jpg" alt="obama10" width="384" height="256" hidden>
+					<img id="image10" src="cost.png" alt="obama10" width="350" height="175" hidden>
 				</div>
 
 				<div id="buttonGrid">
@@ -156,35 +155,35 @@
 			let q1 = ["Mexican Coca-Cola is a fancier drink made in Mexico with cane syrup and stored in glass bottles. The price of sugar recently increased, making it even more expensive. People are complaining that they won’t be able to afford Mexican Coca-Cola anymore. Do you:", "You chose to keep the price of the Mexican Coca-Cola lower, even though the price of the cane sugar increased. While this did allow more people to purchase the drink, the lost revenue from keeping the price lower eventually led to Mexican Coca-Cola being discontinued.", "You chose to increase the price of the Mexican Coca-Cola to account for the price increase of cane sugar. While some people stopped purchasing the Mexican Coca-Cola because of its price, many of them switched to regular Coca-Cola instead, so not much revenue was lost."];
 			let q2 = ["You export goods to two countries, however, these countries are now at war. Do you:", "You immediately cut off all supplies from both countries, choosing neutrality over conflicts or taking sides. Your business does take a massive financial hit with profits dipping and some supplies being cut off. But you do gain global respect, and future trades start opening with you.", "You choose to serve only one country and cut off the other. The country that you helped appreciate it but the other country that you cut off counts it as betrayal. They blacklist your products and your brand becomes a political tool."];
 			let q3 = ["In Catalonia, Spain, there has been a campaign to get the Coke products translated into Catalan for the past 20 years. However, previous executives in the company have resisted making this change for many years. Do you:", "People in Catalonia were very happy that you finally decided to translate Coca-Cola products. While this barely affected revenue, it made a lot of people very happy.", "While your choice not to translate the products didn’t affect revenue much, many people in Catalonia were still not happy. The campaign to translate the products continues with no sign of stopping."];
-			let q4 = ["This is question 4!", "Q4 C1 A (Press to Continue)", "Q4 C2 A (Press to Continue)"];
+			let q4 = ["You are partnered with another company in another country that exports materials to you which you use to manufacture your products. However, because of economic troubles in that country, prices of materials have risen. There are multiple other companies that would export to this country for similar prices or even lower prices, however, you have been working with this company for many years. Do you:", "Your choice to stay with the company and buy the goods at a higher price causes you to have to sell your product at a higher price. People are not happy that the price has increased, and many people are choosing to buy similar and cheaper products from your competitors. Your sales have dipped quite a bit and you are also receiving a decent amount of negative press around your product now.", "Your choice to choose a new company has made you able to keep the price of your product the same. The public is happy, and you are doing fairly well compared to your competitors. You’re also making a significant amount of profit because of the lower cost of materials. "];
 			let q5 = ["In Europe, they recently passed a law that bottles have to have the cap connected to the bottle. However, this costs slightly more to manufacture, and many people do not like this change.", "While some people were not happy about this change, not much revenue was lost overall. People eventually got used to this change, and now many people like it.", "Unfortunately, you did not win the court case. Millions of dollars were wasted on legal fees, and you had to change the design of the cap anyway."];
-			let q6 = ["This is question 6!", "Q6 C1 A (Press to Continue)", "Q6 C2 A (Press to Continue)"];
+			let q6 = ["There is an important meeting in your company. However, the meeting is on an important holiday in several countries where you have branches. It may be hard to find a date so that all employees can attend the meeting again, though. Do you:", "Your choice makes the employees pretty happy that the meeting was canceled even if they didn’t celebrate the holiday. The employees who celebrated the holiday thank you for having the holiday off. The meeting takes a while to reschedule but it happens eventually.", "Your choice causes several employees to protest the meeting being on that holiday, and many don’t show up. The employees are generally pretty angry at you, and one of them has even quit over this incident."];
 			let q7 = ["Cyclamate, a chemical that is used to sweeten diet soda, was recently banned in the United States because of concerns about it being carcinogenic. However, it is still allowed in Europe, and many people there enjoy the current taste of Diet Coke. Do you:", "While people in the United States were displeased with the new taste of Diet Coke, people eventually got used to it, and the loss of profits was minimal.", "People all around the world were angry that the formula was changed, even though cyclamates were still allowed in countries outside of the United States. Because of all of the protests, your company was eventually forced to switch the formula back, which was quite expensive."];
-			let q8 = ["This is question 8!", "Q8 C1 A (Press to Continue)", "Q8 C2 A (Press to Continue)"];
+			let q8 = ["Your company is currently under fire for its environmental impact on places around the world, including its effects on native animals or plants that your products have. Multiple environmental activist groups have protested the amount of waste that your products produce and how your manufacturing impacts the environment. The media is pressuring you to give a response. Do you:", "Your choice to release a statement around how you're reducing pollution leads to mostly positive reception from the project, many of the environmental groups have stopped protesting you, and some are even praising you for making strides to be more environmentally friendly.", "Your choice to release a statement about how, no matter what, your product will always produce a significant amount has angered the public. Many people are boycotting or not buying your product, There is also a substantial amount of negative media coverage talking about how you haven't even attempted to be environmentally friendly."];
 			let q9 = ["The European Union recently limited the amount of high fructose corn syrup allowed in products, making it so that Coca-Cola has to be sweetened using natural sugars such as beet sugar or cane sugar. However, these sweeteners are quite a bit more expensive, and the company would lose a lot of revenue. Do you:", "The new sweeteners that you use cost more, which has increased the price of Coca-Cola products quite a bit. However, this was the better option, as attempting to fight these regulations in court would have cost a lot and would probably not have been successful.", "Your attempt to fight these new regulations in court cost a lot of money in legal fees, and you eventually ended up losing the case, so you were forced to use the more expensive sugars anyway."];
-			let q10 = ["This is question 10!", "Q10 C1 A (Press to Continue)", "Q10 C2 A (Press to Continue)"];
+			let q10 = ["A company in your country is struggling because people prefer to buy cheaper, imported products from international brands. The company’s owner asks for your advice on how to compete in a globalized market. What advice do you give:", "You chose to tell the company to lower their prices to match other competitors. While this may bring in some new customers, the loss in profits from making their products cheaper greatly outweighs the benefit from getting some new customers.", "You chose to tell the company not to decrease their prices and instead focus more on making high-quality products to attract loyal customers. This worked well for the company, and lowering their prices would have resulted in lost profits that would not have been made up for by a small increase in new customers."];
 
 			let q1cs = ["Keep the price lower and lose some revenue selling Mexican Coca-Cola.", "Increase the price anyway."];
 			let q2cs = ["Stop serving both countries.", "Only serve one of the countries."];
 			let q3cs = ["Start producing the translated products.", "Don’t translate the products, and keep selling the regular products there instead."];
-			let q4cs = ["Q4 C1", "Q4 C2"];
+			let q4cs = ["Stay with that company.", "Find a cheaper company to work with."];
 			let q5cs = ["Follow this regulation and lose some revenue in Europe.", "Attempt to fight this regulation in court."];
-			let q6cs = ["Q6 C1", "Q6 C2"];
+			let q6cs = ["Reschedule the meeting.", "Keep the meeting on the same day."];
 			let q7cs = ["Only change the formula for Diet Coke in the United States.", "Change the formula for Diet Coke everywhere, not just the United States."];
-			let q8cs = ["Q8 C1", "Q8 C2"];
+			let q8cs = ["Say you are working to reduce the amount of impact that your products have on the environment.", "State that manufacturing your product will always have negative effects on the environment."];
 			let q9cs = ["Comply with the new regulations and change the formula.", "Take the issue to court."];
-			let q10cs = ["Q10 C1", "Q10 C2"];
+			let q10cs = ["Lower prices to match international brands, even if it means reducing profit margins.", "Focus on unique, high-quality, or locally made products to attract loyal customers."];
 
 			let q1e = ["Because of your choice to keep the price of Mexican Coca-Cola lower, the soda was eventually discontinued.", "Even though you increased the price of Mexican Coca-Cola, there was no substantial revenue loss."];
 			let q2e = ["Your choice to stop selling products to both of the countries involved in the war helped prevent unnecessary conflict with your company.", "Your choice to continue selling to one country in the war led to the other country becoming angry."];
 			let q3e = ["Your decision to translate Coca-Cola products in Catalonia, Spain, made many people in the city very happy.", "While your decision not to translate Coca-Cola products in Catalonia didn’t affect revenue, many people are still unhappy with the decision, and the campaign to translate the products continued."];
-			let q4e = ["Q4 C1 E. ", "Q4 C2 E. "];
+			let q4e = ["Your choice to stay with the company that supplies you with materials caused the price of your product to increase and many customers to switch to your competitors.", "Your choice to switch to a different company for materials caused you to not have to raise the price of your product."];
 			let q5e = ["Your choice to change the bottle cap in Europe to follow regulations didn’t affect revenue too much, and people got used to the change fairly quickly.", "You lost the court case about the bottle caps in Europe, and were forced to change the design of the cap anyway."];
-			let q6e = ["Q6 C1 E. ", "Q6 C2 E. "];
+			let q6e = ["Your choice to reschedule the meeting caused a lot of people to be happy and was the better option.", "Your choice to not reschedule the meeting caused many people to protest and one employee to quit."];
 			let q7e = ["People in the United States quickly got used to the new Diet Coke formula, and profit losses were minimal.", "People around the world were angry about the new taste of Diet Coke, and your company was eventually forced to switch the formula back to the old formula outside of the United States."];
-			let q8e = ["Q8 C1 E. ", "Q8 C2 E. "];
+			let q8e = ["Releasing a statement about how you are reducing pollution led to mostly positive public reception.", "Your choice to release a statement saying that manufacturing your products will always have negative effects on the environment significantly angered the public."];
 			let q9e = ["While switching to natural sugars was more expensive, it was a much safer option than attempting to fight the regulations in court.", "You lost the court case about using more expensive natural sugars in the EU rather than high fructose corn syrup, and were forced to use them anyway."];
-			let q10e = ["Q10 C1 E.", "Q10 C2 E."];
+			let q10e = ["Your suggestion to the other company to lower prices caused a loss in profits that was not made up for by the amount of new customers gained.", "Your suggestion to focus more on making unique and high quality products was the correct suggestion for the company."];
 
 			let outDiv = document.getElementById("outDiv");
 			let allQ = document.getElementById("allQ");
@@ -288,14 +287,14 @@
 					case 4:
 						switch(x) {
 							case 0:
-								//Correct
-								points = points + 10;
-								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q4[1];
 								break;
 							case 1:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q4[2];
 								break;
 						}
@@ -328,14 +327,14 @@
 					case 6:
 						switch(x) {
 							case 0:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
-								outText.textContent = q6[1];
-								break;
-							case 1:
 								//Correct
 								points = points + 10;
 								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								outText.textContent = q6[1];
+								break;
+							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q6[2];
 								break;
 						}
@@ -428,7 +427,7 @@
 
 			function textPressed(x) {
 				if (qNum === 11) {
-					endingSummary = q1e[choices[0]] + q2e[choices[1]] + q3e[choices[2]] + q4e[choices[3]] + q5e[choices[4]] + q6e[choices[5]] + q7e[choices[6]] + q8e[choices[7]] + q9e[choices[8]] + q10e[choices[9]];
+					endingSummary = q1e[choices[0]] + ' ' + q2e[choices[1]] + ' ' + q3e[choices[2]] + ' ' + q4e[choices[3]] + ' ' + q5e[choices[4]] + ' ' + q6e[choices[5]] + ' ' + q7e[choices[6]] + ' ' + q8e[choices[7]] + ' ' + q9e[choices[8]] + ' ' + q10e[choices[9]];
 					endText.textContent = endingSummary;
 					if (points >= 70) {
 						endPoints.textContent = ("You Win! Points: " + points);

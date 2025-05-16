@@ -64,7 +64,6 @@
 
 			.choiceButtons {
 				font-family: Helvetica, sans-serif;
-				height: 50px;
 				border-radius: 10px;
 				border: 2px solid #DADADA;
 				font-size: 25px;
@@ -133,16 +132,16 @@
 			</div>
 			<div id="gridID">
 				<div id="imageBox">
-					<img id="image1" src="obama1.jpg" alt="obama1" width="368" height="207">
-					<img id="image2" src="obama2.jpg" alt="obama2" width="201" height="251" hidden>
-					<img id="image3" src="obama3.jpg" alt="obama3" width="320" height="180" hidden>
-					<img id="image4" src="obama4.jpg" alt="obama4" width="202" height="249" hidden>
-					<img id="image5" src="obama5.jpg" alt="obama5"  width="367" height="244" hidden>
-					<img id="image6" src="obama6.jpg" alt="obama6" width="320" height="180" hidden>
-					<img id="image7" src="obama7.jpg" alt="obama7" width="300" height="168" hidden>
-					<img id="image8" src="obama8.jpg" alt="obama8" width="333" height="187" hidden>
-					<img id="image9" src="obama9.jpg" alt="obama9" width="370" height="208" hidden>
-					<img id="image10" src="obama10.jpg" alt="obama10" width="384" height="256" hidden>
+					<img id="image1" src="privacy.jpg" alt="obama1" width="375" height="240">
+					<img id="image2" src="map.jpg" alt="obama4" width="343" height="139" hidden>
+					<img id="image3" src="conditions.jpg" alt="obama3" width="425" height="283" hidden>
+					<img id="image4" src="generalwari.jpg" alt="obama2" width="339" height="226" hidden>
+					<img id="image5" src="noiphone.jpg" alt="obama5"  width="350" height="350" hidden>
+					<img id="image6" src="meeting.jpg" alt="obama6" width="300" height="300" hidden>
+					<img id="image7" src="mother.jpg" alt="obama7" width="390" height="234" hidden>
+					<img id="image8" src="smoke.jpg" alt="obama8" width="384" height="216" hidden>
+					<img id="image9" src="tariff.png" alt="obama9" width="385" height="292" hidden>
+					<img id="image10" src="cost.png" alt="obama10" width="350" height="175" hidden>
 				</div>
 
 				<div id="buttonGrid">
@@ -153,38 +152,38 @@
 		</div>
 		<script type="text/javascript">
 			//fix
-			let q1 = ["This is question 1!", "Q1 C1 A (Press to Continue)", "Q1 C2 A (Press to Continue)"];
-			let q2 = ["This is question 2!", "Q2 C1 A (Press to Continue)", "Q2 C2 A (Press to Continue)"];
-			let q3 = ["This is question 3!", "Q3 C1 A (Press to Continue)", "Q3 C2 A (Press to Continue)"];
-			let q4 = ["This is question 4!", "Q4 C1 A (Press to Continue)", "Q4 C2 A (Press to Continue)"];
-			let q5 = ["This is question 5!", "Q5 C1 A (Press to Continue)", "Q5 C2 A (Press to Continue)"];
-			let q6 = ["This is question 6!", "Q6 C1 A (Press to Continue)", "Q6 C2 A (Press to Continue)"];
-			let q7 = ["This is question 7!", "Q7 C1 A (Press to Continue)", "Q7 C2 A (Press to Continue)"];
-			let q8 = ["This is question 8!", "Q8 C1 A (Press to Continue)", "Q8 C2 A (Press to Continue)"];
-			let q9 = ["This is question 9!", "Q9 C1 A (Press to Continue)", "Q9 C2 A (Press to Continue)"];
-			let q10 = ["This is question 10!", "Q10 C1 A (Press to Continue)", "Q10 C2 A (Press to Continue)"];
+			let q1 = ["Several countries have officially banned iPhone sales, arguing that Apple’s strict privacy policies prevent their governments from accessing user data when needed. These governments claim that for national security and legal enforcement reasons, they need more oversight into the data being stored on smartphones sold within their borders. Do you:", "You chose to comply with their demands and change your privacy policies. This allowed your company to get back into those markets quickly and boost sales, but many people stopped trusting Apple because of the lower privacy policies, which negatively impacted sales.", "You chose to take the case to international trade courts. This caused your company to lose sales in those countries for now and face legal costs, but people around the world respect Apple for standing firm on privacy."];
+			let q2 = ["You export goods to two countries, however, these countries are now at war. Do you:", "You immediately cut off all supplies from both countries, choosing neutrality over conflicts or taking sides. Your business does take a massive financial hit with profits dipping and some supplies being cut off. But you do gain global respect, and future trades start opening with you.", "You choose to serve only one country and cut off the other. The country that you helped appreciate it but the other country that you cut off counts it as betrayal. They blacklist your products and your brand becomes a political tool."];
+			let q3 = ["Your company, Apple, is currently under fire due to poor working conditions in its supplier factories. Many people are upset and protesting for better working conditions for your employees. Do you:", "You take action to protect human rights, improve global working standards, and hold companies accountable. This earns international respect and support from labor groups and voters. While the cost of products may rise a bit, many people are very happy with your decision anyway.", "You avoid conflict and keep Apple’s production smooth and prices steady in the short term. However, people get angry and accuse you of ignoring human rights issues, and media pressure grows. Many people are angry, and your sales decrease."];
+			let q4 = ["You are partnered with another company in another country that exports materials to you which you use to manufacture your products. However, because of economic troubles in that country, prices of materials have risen. There are multiple other companies that would export to this country for similar prices or even lower prices, however, you have been working with this company for many years. Do you:", "Your choice to stay with the company and buy the goods at a higher price causes you to have to sell your product at a higher price. People are not happy that the price has increased, and many people are choosing to buy similar and cheaper products from your competitors. Your sales have dipped quite a bit and you are also receiving a decent amount of negative press around your product now.", "Your choice to choose a new company has made you able to keep the price of your product the same. The public is happy, and you are doing fairly well compared to your competitors. You’re also making a significant amount of profit because of the lower cost of materials. "];
+			let q5 = ["Multiple countries in the Middle East are considering banning some Apple products in their countries due to cultural issues. This could negatively affect your sales quite a bit. Do you:", "Most leaders reject the idea of custom Apple products, and they go ahead with the ban. This makes Apple look desperate and weak, giving the company a bad image in the global media.", "A few countries do ban Apple products, but it's a small percentage of Apple’s global market. Sales barely drop, and Apple’s strong brand image stays intact. Even if you had talked to the leaders of the countries, they still would have most likely banned the products anyway."];
+			let q6 = ["There is an important meeting in your company. However, the meeting is on an important holiday in several countries where you have branches. It may be hard to find a date so that all employees can attend the meeting again, though. Do you:", "Your choice makes the employees pretty happy that the meeting was canceled even if they didn’t celebrate the holiday. The employees who celebrated the holiday thank you for having the holiday off. The meeting takes a while to reschedule but it happens eventually.", "Your choice causes several employees to protest the meeting being on that holiday, and many don’t show up. The employees are generally pretty angry at you, and one of them has even quit over this incident."];
+			let q7 = ["You’ve just been informed that Taiwan is cutting its contracts with Apple. This is a serious problem because Taiwanese manufacturers produce motherboards, one of the most critical components in every Apple product. Without them, your production line could slow down or even stop. Do you:", "Taiwan agrees to continue working with Apple after negotiations. While Apple avoids production disruptions, the cost of motherboards rises slightly due to new terms. There’s also the potential for future political risks, especially if tensions between Taiwan and other countries escalate, but for now, production and sales continue smoothly.", "Shifting to new suppliers proves challenging. The contracts take time to finalize, and quality issues arise, delaying production. This results in significant financial losses, with Apple losing about $35 billion in sales due to product shortages."];
+			let q8 = ["Your company is currently under fire for its environmental impact on places around the world, including its effects on native animals or plants that your products have. Multiple environmental activist groups have protested the amount of waste that your products produce and how your manufacturing impacts the environment. The media is pressuring you to give a response. Do you:", "Your choice to release a statement around how you're reducing pollution leads to mostly positive reception from the project, many of the environmental groups have stopped protesting you, and some are even praising you for making strides to be more environmentally friendly.", "Your choice to release a statement about how, no matter what, your product will always produce a significant amount has angered the public. Many people are boycotting or not buying your product, There is also a substantial amount of negative media coverage talking about how you haven't even attempted to be environmentally friendly."];
+			let q9 = ["You’re facing a new round of increased tariffs on Chinese-made components, which are used to assemble many Apple products. These tariffs have significantly raised production costs, and now, you must decide how to handle the financial burden. Do you:", "You chose to raise the prices of your products. Unfortunately, many people were not happy with this change and could not afford to purchase your products anymore. Many of these people are now switching to some of your competitors, such as Android.", "You chose to keep the prices of your products the same. While this did result in a little bit of revenue loss, choosing to raise your prices could have caused many people to not be able to afford your products anymore and switch to your competitors."];
+			let q10 = ["A company in your country is struggling because people prefer to buy cheaper, imported products from international brands. The company’s owner asks for your advice on how to compete in a globalized market. What advice do you give:", "You chose to tell the company to lower their prices to match other competitors. While this may bring in some new customers, the loss in profits from making their products cheaper greatly outweighs the benefit from getting some new customers.", "You chose to tell the company not to decrease their prices and instead focus more on making high-quality products to attract loyal customers. This worked well for the company, and lowering their prices would have resulted in lost profits that would not have been made up for by a small increase in new customers."];
 
-			let q1cs = ["Q1 C1", "Q1 C2"];
-			let q2cs = ["Q2 C1", "Q2 C2"];
-			let q3cs = ["Q3 C1", "Q3 C2"];
-			let q4cs = ["Q4 C1", "Q4 C2"];
-			let q5cs = ["Q5 C1", "Q5 C2"];
-			let q6cs = ["Q6 C1", "Q6 C2"];
-			let q7cs = ["Q7 C1", "Q7 C2"];
-			let q8cs = ["Q8 C1", "Q8 C2"];
-			let q9cs = ["Q9 C1", "Q9 C2"];
-			let q10cs = ["Q10 C1", "Q10 C2"];
+			let q1cs = ["Comply with their demands and change privacy policies.", "Take the case to international trade courts."];
+			let q2cs = ["Stop serving both countries.", "Only serve one of the countries."];
+			let q3cs = ["Change your policies to require fair working conditions.", "Stay quiet about the issue."];
+			let q4cs = ["Stay with that company.", "Find a cheaper company to work with."];
+			let q5cs = ["Talk with the presidents of the countries that are considering banning Apple products.", "Ignore the bans and continue running Apple the same way without making changes."];
+			let q6cs = ["Reschedule the meeting.", "Keep the meeting on the same day."];
+			let q7cs = ["Attempt to meet with the president of Taiwan to discuss the issue directly.", "Attempt to find a new place to manufacture motherboards."];
+			let q8cs = ["Say you are working to reduce the amount of impact that your products have on the environment.", "State that manufacturing your product will always have negative effects on the environment."];
+			let q9cs = ["Raise the price of Apple products in the United States.", "Keep the prices the same and lose some revenue."];
+			let q10cs = ["Lower prices to match international brands, even if it means reducing profit margins.", "Focus on unique, high-quality, or locally made products to attract loyal customers."];
 
-			let q1e = ["Q1 C1 E. ", "Q1 C2 E. "];
-			let q2e = ["Q2 C1 E. ", "Q2 C2 E. "];
-			let q3e = ["Q3 C1 E. ", "Q3 C2 E. "];
-			let q4e = ["Q4 C1 E. ", "Q4 C2 E. "];
-			let q5e = ["Q5 C1 E. ", "Q5 C2 E. "];
-			let q6e = ["Q6 C1 E. ", "Q6 C2 E. "];
-			let q7e = ["Q7 C1 E. ", "Q7 C2 E. "];
-			let q8e = ["Q8 C1 E. ", "Q8 C2 E. "];
-			let q9e = ["Q9 C1 E. ", "Q9 C2 E. "];
-			let q10e = ["Q10 C1 E.", "Q10 C2 E."];
+			let q1e = ["Your choice to comply with the countries’ demands about privacy caused many people to lose trust with Apple.", "While you did lose money from the court case about your privacy policies, complying with their demands would have caused many people to lose trust in your company."];
+			let q2e = ["Your choice to stop selling products to both of the countries involved in the war helped prevent unnecessary conflict with your company.", "Your choice to continue selling to one country in the war led to the other country becoming angry."];
+			let q3e = ["Your choice to improve working conditions for your employees is very positively received, and many people are very happy that you made that decision.", "Your choice not to address the poor working conditions caused many people to become angry with your company, and sales decreased as a result."];
+			let q4e = ["Your choice to stay with the company that supplies you with materials caused the price of your product to increase and many customers to switch to your competitors.", "Your choice to switch to a different company for materials caused you to not have to raise the price of your product."];
+			let q5e = ["Apple ends up looking bad for trying to change its products just to please certain governments, and your products still got banned in these countries anyway.", "Even though Apple products were banned in some Middle Eastern countries, this didn’t affect your revenue too much, and the countries would have likely banned the products anyway."];
+			let q6e = ["Your choice to reschedule the meeting caused a lot of people to be happy and was the better option.", "Your choice to not reschedule the meeting caused many people to protest and one employee to quit."];
+			let q7e = ["You were able to talk with Taiwan’s president to negotiate continuing to produce motherboards there.", "Attempting to switch to a different place to manufacture motherboards backfired, and you lost tens of billions in revenue."];
+			let q8e = ["Releasing a statement about how you are reducing pollution led to mostly positive public reception.", "Your choice to release a statement saying that manufacturing your products will always have negative effects on the environment significantly angered the public."];
+			let q9e = ["Raising your prices because of the tariffs caused many people to not be able to afford your products and switch to your competitors.", "While keeping your products the same price when the price to manufacture components was higher did lead to a little bit of revenue loss, raising your prices would have caused many people do not be able to afford your products anymore."];
+			let q10e = ["Your suggestion to the other company to lower prices caused a loss in profits that was not made up for by the amount of new customers gained.", "Your suggestion to focus more on making unique and high quality products was the correct suggestion for the company."];
 
 			let outDiv = document.getElementById("outDiv");
 			let allQ = document.getElementById("allQ");
@@ -228,14 +227,14 @@
 					case 1:
 						switch(x) {
 							case 0:
-								//Correct
-								points = points + 10;
-								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q1[1];
 								break;
 							case 1:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q1[2];
 								break;
 						}
@@ -268,14 +267,14 @@
 					case 3:
 						switch(x) {
 							case 0:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
-								outText.textContent = q3[1];
-								break;
-							case 1:
 								//Correct
 								points = points + 10;
 								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								outText.textContent = q3[1];
+								break;
+							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q3[2];
 								break;
 						}
@@ -288,14 +287,14 @@
 					case 4:
 						switch(x) {
 							case 0:
-								//Correct
-								points = points + 10;
-								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q4[1];
 								break;
 							case 1:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q4[2];
 								break;
 						}
@@ -328,14 +327,14 @@
 					case 6:
 						switch(x) {
 							case 0:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
-								outText.textContent = q6[1];
-								break;
-							case 1:
 								//Correct
 								points = points + 10;
 								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								outText.textContent = q6[1];
+								break;
+							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q6[2];
 								break;
 						}
@@ -348,14 +347,14 @@
 					case 7:
 						switch(x) {
 							case 0:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
-								outText.textContent = q7[1];
-								break;
-							case 1:
 								//Correct
 								points = points + 10;
 								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								outText.textContent = q7[1];
+								break;
+							case 1:
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q7[2];
 								break;
 						}
@@ -388,14 +387,14 @@
 					case 9:
 						switch(x) {
 							case 0:
-								//Correct
-								points = points + 10;
-								pointsDisplay.textContent = ("Points: " + points + " (+10)");
+								//Incorrect
+								pointsDisplay.textContent = ("Points: " + points);
 								outText.textContent = q9[1];
 								break;
 							case 1:
-								//Incorrect
-								pointsDisplay.textContent = ("Points: " + points);
+								//Correct
+								points = points + 10;
+								pointsDisplay.textContent = ("Points: " + points + " (+10)");
 								outText.textContent = q9[2];
 								break;
 						}
@@ -428,7 +427,7 @@
 
 			function textPressed(x) {
 				if (qNum === 11) {
-					endingSummary = q1e[choices[0]] + q2e[choices[1]] + q3e[choices[2]] + q4e[choices[3]] + q5e[choices[4]] + q6e[choices[5]] + q7e[choices[6]] + q8e[choices[7]] + q9e[choices[8]] + q10e[choices[9]];
+					endingSummary = q1e[choices[0]] + ' ' + q2e[choices[1]] + ' ' + q3e[choices[2]] + ' ' + q4e[choices[3]] + ' ' + q5e[choices[4]] + ' ' + q6e[choices[5]] + ' ' + q7e[choices[6]] + ' ' + q8e[choices[7]] + ' ' + q9e[choices[8]] + ' ' + q10e[choices[9]];
 					endText.textContent = endingSummary;
 					if (points >= 70) {
 						endPoints.textContent = ("You Win! Points: " + points);
