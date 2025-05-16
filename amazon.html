@@ -78,7 +78,6 @@
 				top: 50% ;right: 50%;
 				transform: translate(50%, -50%);
 				width: 750px;
-				height: 450px;
 			}
 
 			#outText {
@@ -86,6 +85,10 @@
 			}
 
 			#pointsDisplay {
+				margin: 10px;
+			}
+
+			#continueText {
 				margin: 10px;
 			}
 
@@ -117,9 +120,11 @@
 				<h1 id="outText">This is the outcome of the first question! This is where you will explain what happened because of the choice made in the first question. (Tap to continue)</h1>
 				<br>
 				<h1 id="pointsDisplay"></h1>
+				<br>
+				<h1 id="continueText">(Tap to continue)</h1>
 			</div>
 		</div>
-		<div id="endDiv" hidden>
+		<div id="endDiv" onClick="endPressed()" hidden>
 			<p id="endText">Ending Summary</p>
 			<br>
 			<h1 id="endPoints"></h1>
@@ -163,7 +168,7 @@
 			let q9 = ["You recently got into a controversy for selling some items that are considered illegal in multiple different states and countries. Some people were unhappy that you were selling these items on your website at all, while others said that you should be able to sell these items to places that allowed them. Do you:", "You chose to stop selling the products and issue a public apology about the situation. This was the correct choice, as continuing to sell the products could have caused Amazon to temporarily be banned in certain states and countries until the items were taken down.", "You chose to continue to sell the products and say that you do not have control of what people sell on your website. Unfortunately, some of the states and countries in which the items were illegal decided to temporarily ban Amazon, which ended up forcing you to remove the items anyway."];
 			let q10 = ["A company in your country is struggling because people prefer to buy cheaper, imported products from international brands. The company’s owner asks for your advice on how to compete in a globalized market. What advice do you give:", "You chose to tell the company to lower their prices to match other competitors. While this may bring in some new customers, the loss in profits from making their products cheaper greatly outweighs the benefit from getting some new customers.", "You chose to tell the company not to decrease their prices and instead focus more on making high-quality products to attract loyal customers. This worked well for the company, and lowering their prices would have resulted in lost profits that would not have been made up for by a small increase in new customers."];
 
-			let q1cs = ["Address the Controversy and apologize to the people of that area.", "Shut down the branch and don’t address the controversy."];
+			let q1cs = ["Address the controversy and apologize to the people of that area.", "Shut down the branch and don’t address the controversy."];
 			let q2cs = ["Stop serving both countries.", "Only serve one of the countries."];
 			let q3cs = ["Attempt to fight this in court.", "Settle out of court and attempt to remove all of the items with copyrighted characters off of Amazon."];
 			let q4cs = ["Stay with that company.", "Find a cheaper company to work with."];
@@ -430,9 +435,9 @@
 					endingSummary = q1e[choices[0]] + ' ' + q2e[choices[1]] + ' ' + q3e[choices[2]] + ' ' + q4e[choices[3]] + ' ' + q5e[choices[4]] + ' ' + q6e[choices[5]] + ' ' + q7e[choices[6]] + ' ' + q8e[choices[7]] + ' ' + q9e[choices[8]] + ' ' + q10e[choices[9]];
 					endText.textContent = endingSummary;
 					if (points >= 70) {
-						endPoints.textContent = ("You Win! Points: " + points);
+						endPoints.textContent = ("You Win! Points: " + points + '. Tap to reset!');
 					} else {
-						endPoints.textContent = ("You lost. Points: " + points);
+						endPoints.textContent = ("You lost. Points: " + points + '. Tap to reset!');
 					}
 					endDiv.hidden = false;
 					outDiv.hidden = true;
@@ -440,6 +445,10 @@
 					allQ.hidden = false;
 					outDiv.hidden = true;
 				}
+			}
+
+			function endPressed() {
+				window.location.href = "https://sorenrussell.github.io"
 			}
 		</script>
 	</body>

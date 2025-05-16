@@ -78,7 +78,6 @@
 				top: 50% ;right: 50%;
 				transform: translate(50%, -50%);
 				width: 750px;
-				height: 450px;
 			}
 
 			#outText {
@@ -86,6 +85,10 @@
 			}
 
 			#pointsDisplay {
+				margin: 10px;
+			}
+
+			#continueText {
 				margin: 10px;
 			}
 
@@ -117,9 +120,11 @@
 				<h1 id="outText">This is the outcome of the first question! This is where you will explain what happened because of the choice made in the first question. (Tap to continue)</h1>
 				<br>
 				<h1 id="pointsDisplay"></h1>
+				<br>
+				<h1 id="continueTest">(Tap to continue)</h1>
 			</div>
 		</div>
-		<div id="endDiv" hidden>
+		<div id="endDiv" onClick="endPressed()" hidden>
 			<p id="endText">Ending Summary</p>
 			<br>
 			<h1 id="endPoints"></h1>
@@ -430,9 +435,9 @@
 					endingSummary = q1e[choices[0]] + ' ' + q2e[choices[1]] + ' ' + q3e[choices[2]] + ' ' + q4e[choices[3]] + ' ' + q5e[choices[4]] + ' ' + q6e[choices[5]] + ' ' + q7e[choices[6]] + ' ' + q8e[choices[7]] + ' ' + q9e[choices[8]] + ' ' + q10e[choices[9]];
 					endText.textContent = endingSummary;
 					if (points >= 70) {
-						endPoints.textContent = ("You Win! Points: " + points);
+						endPoints.textContent = ("You Win! Points: " + points + '. Tap to reset!');
 					} else {
-						endPoints.textContent = ("You lost. Points: " + points);
+						endPoints.textContent = ("You lost. Points: " + points + '. Tap to reset!');
 					}
 					endDiv.hidden = false;
 					outDiv.hidden = true;
@@ -440,6 +445,10 @@
 					allQ.hidden = false;
 					outDiv.hidden = true;
 				}
+			}
+
+			function endPressed() {
+				window.location.href = "https://sorenrussell.github.io"
 			}
 		</script>
 	</body>
